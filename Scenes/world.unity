@@ -183,6 +183,7 @@ MonoBehaviour:
   theRB: {fileID: 285626485}
   moveSpeed: 5
   viewCam: {fileID: 620201803}
+  fireImpact: {fileID: 0}
   mouseSensitivity: 1
 --- !u!50 &285626485
 Rigidbody2D:
@@ -389,32 +390,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 326461268}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!61 &326461273
-BoxCollider2D:
+--- !u!65 &326461273
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 326461268}
-  m_Enabled: 1
-  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.000000059604645}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
+  m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.0001, y: 1.0000002}
-  m_EdgeRadius: 0
+  m_Size: {x: 0, y: 2.2676618, z: 1.0000002}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &573652560
 GameObject:
   m_ObjectHideFlags: 0
@@ -822,6 +810,7 @@ MonoBehaviour:
   theRB: {fileID: 1419580051}
   moveSpeed: 5
   viewCam: {fileID: 600005826}
+  fireImpact: {fileID: 7414606590814973858, guid: 2f31cbfb160c1e94b99310d835b29c9f, type: 3}
   mouseSensitivity: 1
 --- !u!61 &1419580054
 BoxCollider2D:
@@ -991,3 +980,60 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &7414606590630003538
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7414606590814973857, guid: 2f31cbfb160c1e94b99310d835b29c9f, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7414606590814973857, guid: 2f31cbfb160c1e94b99310d835b29c9f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7414606590814973857, guid: 2f31cbfb160c1e94b99310d835b29c9f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7414606590814973857, guid: 2f31cbfb160c1e94b99310d835b29c9f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7414606590814973857, guid: 2f31cbfb160c1e94b99310d835b29c9f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7414606590814973857, guid: 2f31cbfb160c1e94b99310d835b29c9f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7414606590814973857, guid: 2f31cbfb160c1e94b99310d835b29c9f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7414606590814973857, guid: 2f31cbfb160c1e94b99310d835b29c9f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7414606590814973857, guid: 2f31cbfb160c1e94b99310d835b29c9f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7414606590814973857, guid: 2f31cbfb160c1e94b99310d835b29c9f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7414606590814973857, guid: 2f31cbfb160c1e94b99310d835b29c9f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7414606590814973858, guid: 2f31cbfb160c1e94b99310d835b29c9f, type: 3}
+      propertyPath: m_Name
+      value: fireImpact
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2f31cbfb160c1e94b99310d835b29c9f, type: 3}

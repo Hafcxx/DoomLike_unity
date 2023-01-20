@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     private Vector2 moveInput;
     private Vector2 mouseInput;
     public Camera viewCam;
+    public GameObject fireImpact; 
 
     public float mouseSensitivity = 1f; 
     void Start()
@@ -43,14 +44,15 @@ public class PlayerController : MonoBehaviour
 
         //shooting
 
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButtonDown(0))
         {   
             //Estamos enviando un rayo, despues consultamos si este golpeó
             Ray ray = viewCam.ViewportPointToRay(new Vector3(.5f, .5f, .5f));
             RaycastHit hit;
             if(Physics.Raycast(ray, out hit))
             {
-                Debug.Log("Im HITTING" + hit.transform.name);
+                //Debug.Log("Im HITTING" + hit.transform.name);
+                Instantiate(fireImpact, hit.point, transform.rotation);
             }else
             {
                 Debug.Log("Not hitting");
